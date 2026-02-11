@@ -236,6 +236,11 @@ df.to_sql(table_name, engine, if_exists='append', index=False)
   "rows_inserted": 50
 }
 ```
+## 📊 Database Result
+
+<p align="center">
+  <img src="images/mysql_result.png" width="800">
+</p>
 
 ---
 

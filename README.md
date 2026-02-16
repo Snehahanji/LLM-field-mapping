@@ -238,10 +238,11 @@ You can test using:
 
 ## 📸 RESULTS / OUTPUT SCREENSHOTS
 
-(Add screenshots after running project)
+
 
 ```
-Paste output screenshots here
+<img width="1435" height="143" alt="image" src="https://github.com/user-attachments/assets/d7ca0e8e-7c86-49b7-ab9a-491b645df946" />
+
 ```
 
 ---

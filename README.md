@@ -6,14 +6,14 @@ This project is a **FastAPI backend service** that automatically maps Excel fiel
 
 ## 📌 Features
 
-✅ Upload Excel files
-✅ Automatically detect column names
-✅ Fetch database schema dynamically
-✅ Use LLM to generate intelligent field mapping
-✅ Rename columns automatically
-✅ Insert mapped data into MySQL
-✅ Preview processed data
-✅ Health check endpoint
+* Upload Excel files
+* Automatically detect column names
+* Fetch database schema dynamically
+* Use LLM to generate intelligent field mapping
+* Rename columns automatically
+* Insert mapped data into MySQL
+* Preview processed data
+* Health check endpoint
 
 ---
 

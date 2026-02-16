@@ -240,7 +240,6 @@ You can test using:
 
 ## 📸 LLM FIELD MAPPING RESULTS
 
-(Add mapping JSON screenshots)
 
 ```
 DB Fields: ['applicant_id', 'applicant_name', 'phone_number', 'email', 'aadhaar_number', 'pan_number', 'loan_amount', 'loan_purppose', 'employment_type', 'monthly_income']

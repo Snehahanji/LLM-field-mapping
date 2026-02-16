@@ -238,32 +238,19 @@ You can test using:
 
 ## 📸 RESULTS / OUTPUT SCREENSHOTS
 
-
-
-```
-<img width="1435" height="143" alt="image" src="https://github.com/user-attachments/assets/d7ca0e8e-7c86-49b7-ab9a-491b645df946" />
-
-```
-
----
-
 ## 📸 LLM FIELD MAPPING RESULTS
 
 (Add mapping JSON screenshots)
 
 ```
-Paste mapping results here
+DB Fields: ['applicant_id', 'applicant_name', 'phone_number', 'email', 'aadhaar_number', 'pan_number', 'loan_amount', 'loan_purppose', 'employment_type', 'monthly_income']
+🔗 Mapping: {'ID': 'applicant_id', 'Full Name': 'applicant_name', 'Mobile': 'phone_number', 'Email Address': 'email', 'Aadhaar No': 'aadhaar_number', 'PAN Card': 'pan_number', 'Requested Loan': 'loan_amount', 'Purpose of Loan': 'loan_purpose', 'Job Type': 'employment_type', 'Monthly Salary': 'monthly_income'}
 ```
 
 ---
 
 ## 📸 DATABASE INSERT RESULTS
-
-(Add MySQL table screenshots)
-
-```
-Paste DB screenshots here
-```
+<img width="1443" height="185" alt="image" src="https://github.com/user-attachments/assets/f1e01856-7493-40e0-a2da-008bbe56451d" />
 
 ---
 

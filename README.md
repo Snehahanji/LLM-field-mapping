@@ -21,7 +21,7 @@ Upload any messy Excel file of loan applicant data — even with misnamed column
 ### 🏠 Main Dashboard
 > Upload your Excel file and choose to validate or push directly to the database.
 
-![Main Dashboard](docs/screenshots/01_main_dashboard.png)
+![Main Dashboard](01_main_dashboard.png)
 *The main Streamlit UI — drag-and-drop Excel upload with Validate and Upload buttons.*
 
 ---
@@ -29,7 +29,7 @@ Upload any messy Excel file of loan applicant data — even with misnamed column
 ### 🗺️ LLM Field Mapping
 > The AI reads your column names and maps them to the correct database fields automatically.
 
-![Field Mapping](docs/screenshots/02_field_mapping.png)
+![Field Mapping](02_field_mapping.png)
 *LLM-generated column mapping table — Excel column names on the left, DB fields on the right.*
 
 ---
@@ -37,7 +37,7 @@ Upload any messy Excel file of loan applicant data — even with misnamed column
 ### 📊 Mapping Confidence Meter
 > A confidence score shows how reliably the LLM matched your columns.
 
-![Confidence Meter](docs/screenshots/03_confidence_meter.png)
+![Confidence Meter](03_confidence_meter.png)
 *Green = reliable mapping (≥70%). Yellow = review recommended (<70%).*
 
 ---
@@ -45,7 +45,7 @@ Upload any messy Excel file of loan applicant data — even with misnamed column
 ### 🔁 Before vs. After Data Preview
 > Side-by-side view of raw uploaded data vs. the cleaned, repaired output.
 
-![Before After Preview](docs/screenshots/04_before_after_preview.png)
+![Before After Preview](03_confidence_meter.png)
 *Left: original messy Excel. Right: AI-repaired, validated data ready for the database.*
 
 ---
@@ -53,7 +53,7 @@ Upload any messy Excel file of loan applicant data — even with misnamed column
 ### ✅ Validation Complete
 > After validation, a success banner appears with all insights.
 
-![Validation Success](docs/screenshots/05_validation_success.png)
+![Validation Success](03_confidence_meter.png)
 *Success state showing mapping table, confidence score, before/after preview, and download button.*
 
 ---
@@ -61,7 +61,7 @@ Upload any messy Excel file of loan applicant data — even with misnamed column
 ### 🚀 Upload & Insert to Database
 > After confirming the preview, upload to MySQL with a single click.
 
-![Upload Success](docs/screenshots/06_upload_success.png)
+![Upload Success](04_upload_success.png)
 *Upload result showing number of newly inserted records and updated records.*
 
 ---
@@ -69,7 +69,7 @@ Upload any messy Excel file of loan applicant data — even with misnamed column
 ### 🩺 API Health Check
 > Live status of the FastAPI backend shown at the bottom of the dashboard.
 
-![API Health](docs/screenshots/07_api_health.png)
+![API Health](05_api_health.png)
 *FastAPI health endpoint response rendered inline in the Streamlit app.*
 
 ---
@@ -284,20 +284,6 @@ To populate the screenshot placeholders with real images:
 # Create the screenshots folder
 mkdir -p docs/screenshots
 ```
-
-Then run the app and capture each screen, saving them as:
-
-| Filename | What to Capture |
-|----------|----------------|
-| `01_main_dashboard.png` | The full Streamlit page on load |
-| `02_field_mapping.png` | The LLM mapping table after validation |
-| `03_confidence_meter.png` | The progress bar + confidence %, Both dataframes side by side, Full validation result view |
-| `04_upload_success.png` | The inserted/updated metric cards |
-| `05_api_health.png` | The API health check section |
-
-> **Tip:** Use [Shottr](https://shottr.cc/) (Mac) or [Greenshot](https://getgreenshot.org/) (Windows) for clean UI screenshots.
-
----
 
 ## 📄 License
 

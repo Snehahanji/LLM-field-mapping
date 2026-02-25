@@ -34,29 +34,15 @@ Upload any messy Excel file of loan applicant data — even with misnamed column
 
 ---
 
-### 📊 Mapping Confidence Meter
+### 📊 Mapping Confidence Meter, 🔁 Before vs. After Data Preview,  ✅ Validation Complete
 > A confidence score shows how reliably the LLM matched your columns.
+> Side-by-side view of raw uploaded data vs. the cleaned, repaired output.
+> After validation, a success banner appears with all insights.
 
 ![Confidence Meter](03_confidence_meter.png)
 *Green = reliable mapping (≥70%). Yellow = review recommended (<70%).*
-
----
-
-### 🔁 Before vs. After Data Preview
-> Side-by-side view of raw uploaded data vs. the cleaned, repaired output.
-
-![Before After Preview](03_confidence_meter.png)
 *Left: original messy Excel. Right: AI-repaired, validated data ready for the database.*
-
----
-
-### ✅ Validation Complete
-> After validation, a success banner appears with all insights.
-
-![Validation Success](03_confidence_meter.png)
 *Success state showing mapping table, confidence score, before/after preview, and download button.*
-
----
 
 ### 🚀 Upload & Insert to Database
 > After confirming the preview, upload to MySQL with a single click.

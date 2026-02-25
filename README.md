@@ -67,10 +67,10 @@ Excel Upload
 | `email` | VARCHAR(255) | Standard email format |
 | `aadhaar_number` | VARCHAR(20) | 12-digit numeric |
 | `pan_number` | VARCHAR(20) | `AAAAA9999A` format |
-| `loan_amount` | DECIMAL(12,2) | ₹1,000 – ₹1,00,00,000 |
+| `loan_amount` | DECIMAL(12,2) | ₹5,00,000 – ₹1,00,00,000 |
 | `loan_purpose` | VARCHAR(255) | Controlled list |
 | `employment_type` | VARCHAR(100) | Controlled list |
-| `monthly_income` | DECIMAL(12,2) | ₹1,000 – ₹1,00,00,000 |
+| `monthly_income` | DECIMAL(12,2) | ₹25,000 – ₹1,00,000 |
 
 ---
 

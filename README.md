@@ -291,11 +291,9 @@ Then run the app and capture each screen, saving them as:
 |----------|----------------|
 | `01_main_dashboard.png` | The full Streamlit page on load |
 | `02_field_mapping.png` | The LLM mapping table after validation |
-| `03_confidence_meter.png` | The progress bar + confidence % |
-| `04_before_after_preview.png` | Both dataframes side by side |
-| `05_validation_success.png` | Full validation result view |
-| `06_upload_success.png` | The inserted/updated metric cards |
-| `07_api_health.png` | The API health check section |
+| `03_confidence_meter.png` | The progress bar + confidence %, Both dataframes side by side, Full validation result view |
+| `04_upload_success.png` | The inserted/updated metric cards |
+| `05_api_health.png` | The API health check section |
 
 > **Tip:** Use [Shottr](https://shottr.cc/) (Mac) or [Greenshot](https://getgreenshot.org/) (Windows) for clean UI screenshots.
 

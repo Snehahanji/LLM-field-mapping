@@ -16,7 +16,67 @@ Upload any messy Excel file of loan applicant data — even with misnamed column
 
 ---
 
-## 🖼️ Dashboard Preview
+## 🖼️ Screenshots & Dashboard Preview
+
+### 🏠 Main Dashboard
+> Upload your Excel file and choose to validate or push directly to the database.
+
+![Main Dashboard](docs/screenshots/01_main_dashboard.png)
+*The main Streamlit UI — drag-and-drop Excel upload with Validate and Upload buttons.*
+
+---
+
+### 🗺️ LLM Field Mapping
+> The AI reads your column names and maps them to the correct database fields automatically.
+
+![Field Mapping](docs/screenshots/02_field_mapping.png)
+*LLM-generated column mapping table — Excel column names on the left, DB fields on the right.*
+
+---
+
+### 📊 Mapping Confidence Meter
+> A confidence score shows how reliably the LLM matched your columns.
+
+![Confidence Meter](docs/screenshots/03_confidence_meter.png)
+*Green = reliable mapping (≥70%). Yellow = review recommended (<70%).*
+
+---
+
+### 🔁 Before vs. After Data Preview
+> Side-by-side view of raw uploaded data vs. the cleaned, repaired output.
+
+![Before After Preview](docs/screenshots/04_before_after_preview.png)
+*Left: original messy Excel. Right: AI-repaired, validated data ready for the database.*
+
+---
+
+### ✅ Validation Complete
+> After validation, a success banner appears with all insights.
+
+![Validation Success](docs/screenshots/05_validation_success.png)
+*Success state showing mapping table, confidence score, before/after preview, and download button.*
+
+---
+
+### 🚀 Upload & Insert to Database
+> After confirming the preview, upload to MySQL with a single click.
+
+![Upload Success](docs/screenshots/06_upload_success.png)
+*Upload result showing number of newly inserted records and updated records.*
+
+---
+
+### 🩺 API Health Check
+> Live status of the FastAPI backend shown at the bottom of the dashboard.
+
+![API Health](docs/screenshots/07_api_health.png)
+*FastAPI health endpoint response rendered inline in the Streamlit app.*
+
+---
+
+> 📸 **To add real screenshots:** Run the app, take screenshots of each view, and save them to `docs/screenshots/` with the filenames shown above.
+
+---
 
 | Feature | Description |
 |--------|-------------|
@@ -67,10 +127,10 @@ Excel Upload
 | `email` | VARCHAR(255) | Standard email format |
 | `aadhaar_number` | VARCHAR(20) | 12-digit numeric |
 | `pan_number` | VARCHAR(20) | `AAAAA9999A` format |
-| `loan_amount` | DECIMAL(12,2) | ₹5,00,000 – ₹1,00,00,000 |
+| `loan_amount` | DECIMAL(12,2) | ₹1,000 – ₹1,00,00,000 |
 | `loan_purpose` | VARCHAR(255) | Controlled list |
 | `employment_type` | VARCHAR(100) | Controlled list |
-| `monthly_income` | DECIMAL(12,2) | ₹25,000 – ₹1,00,000 |
+| `monthly_income` | DECIMAL(12,2) | ₹1,000 – ₹1,00,00,000 |
 
 ---
 
@@ -213,6 +273,31 @@ requests
 - ✅ Upsert logic — re-uploading the same file updates, not duplicates
 - ✅ Scientific notation normalization (e.g., `1.23E+11` → `123000000000`)
 - ✅ LLM mapping + format-based fallback for maximum accuracy
+
+---
+
+## 📸 Adding Screenshots to This README
+
+To populate the screenshot placeholders with real images:
+
+```bash
+# Create the screenshots folder
+mkdir -p docs/screenshots
+```
+
+Then run the app and capture each screen, saving them as:
+
+| Filename | What to Capture |
+|----------|----------------|
+| `01_main_dashboard.png` | The full Streamlit page on load |
+| `02_field_mapping.png` | The LLM mapping table after validation |
+| `03_confidence_meter.png` | The progress bar + confidence % |
+| `04_before_after_preview.png` | Both dataframes side by side |
+| `05_validation_success.png` | Full validation result view |
+| `06_upload_success.png` | The inserted/updated metric cards |
+| `07_api_health.png` | The API health check section |
+
+> **Tip:** Use [Shottr](https://shottr.cc/) (Mac) or [Greenshot](https://getgreenshot.org/) (Windows) for clean UI screenshots.
 
 ---
 
